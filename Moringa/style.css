@@ -1,0 +1,136 @@
+/* Style the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a3d2d8;
+    text-align: justify;
+}
+
+/* Style the image */
+img {
+    width: 80%;  /* Makes the image responsive */
+    
+    border-radius: 30px; /* Rounds the corners */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Adds shadow */
+}
+
+/* Style headings */
+h1 {
+    color: #333;
+}
+
+/* Style paragraphs */
+p {
+    color: #666;
+    font-size: 18px;
+}
+/* Style for the container */
+.image-container {
+    position: relative;
+    width: 800px; /* Adjust as needed */
+    height: 600px; /* Adjust as needed */
+}
+
+/* Style for both images */
+.image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the images fill the container */
+    opacity: 0; /* Initially hidden */
+    animation: swap 4s infinite alternate; /* Runs the animation */
+}
+
+/* Animation keyframes */
+@keyframes swap {
+    0%, 100% { opacity: 1; } /* First image visible */
+    50% { opacity: 0; } /* First image fades out */
+}
+
+/* Apply different delays to alternate images */
+.img1 {
+    animation-delay: 0s; /* Starts immediately */
+}
+
+.img2 {
+    animation-delay: 2s; /* Starts after 2 seconds */
+}
+
+
+.box {
+    width: 1000px; /* Set width */
+    padding: 60px; /* Space inside the div */
+    background-color: rgb(100, 221, 120); /* Background color */
+    
+    /* Border */
+    border: 3px solid #e22222; /* 3px thick, solid, dark border */
+    border-radius: 10px; /* Rounded corners */
+
+    /* Elevation Shadow */
+    box-shadow: 20px 20px 25px rgba(58, 52, 52, 0.3); 
+    /* X-offset, Y-offset, blur, spread, color */
+
+    text-align: center; /* Centers text */
+}
+
+/* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Removes double borders */
+    background-color: #f9f9f9; /* Light background */
+}
+
+/* Style the table headers */
+th {
+    background-color: #333; /* Dark header */
+    color: white; /* White text */
+    padding: 10px;
+    border: 2px solid #444;
+}
+
+/* Style the table rows */
+td {
+    padding: 10px;
+    border: 2px solid #e2c484; /* Light border */
+}
+
+/* Add zebra stripes for rows */
+tr:nth-child(even) {
+    background-color: #dfa2a2;
+}
+
+/* Add hover effect */
+tr:hover {
+    background-color: #8767dd;
+}
+/* Style the form */
+form {
+    display: flex;
+    flex-direction: column; /* Arranges items in a vertical line */
+    width: 300px; /* Adjust width */
+    margin: auto; /* Centers the form */
+    gap: 10px; /* Adds spacing between items */
+}
+
+/* Style input fields and textarea */
+input, textarea {
+    width: 100%; /* Makes fields take full width */
+    padding: 8px; /* Adds padding */
+    border: 2px solid #ccc; /* Adds a border */
+    border-radius
+/* Common footer styles */
+.custom-footer, .semantic-footer {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Styling for <div> footer */
+.custom-footer {
+    background-color: #444; /* Dark Gray */
+}
+
+/* Styling for <footer> */
+.semantic-footer {
+    background-color: #222; /* Even Darker Gray */
+}
